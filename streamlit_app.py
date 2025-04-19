@@ -1,9 +1,5 @@
 import io
 import streamlit as st
-import os
-
-result = os.popen('pip list').read()
-st.code(result, language=None)
 
 from PIL import Image
 from cnocr import CnOcr
@@ -29,4 +25,3 @@ if result:
     st.write('**Результаты распознавания:**')
     st.write("\n".join(i["text"] for i in text))
     # Объединяет распознанные текстовые фрагменты в одну строку с разделением по строкам (через \n)
-    
