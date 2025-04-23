@@ -1,6 +1,5 @@
 streamlit==1.35.0
 torch==2.6.0
 torchvision==0.21.0
-numpy==1.19.2
 opencv-python-headless==4.11.0.86
 cnocr==2.3.1
