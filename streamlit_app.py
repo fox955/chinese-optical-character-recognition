@@ -23,5 +23,5 @@ result = st.button('Распознать изображение')
 if result:
     text = CnOcr().ocr(img)
     st.write('**Результаты распознавания:**')
-    st.write("\n".join(i["text"] for i in text))
+    st.write("\n\n".join(i["text"] for i in text))
     # Объединяет распознанные текстовые фрагменты в одну строку с разделением по строкам (через \n)
